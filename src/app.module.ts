@@ -1,9 +1,12 @@
 import { Module } from '@nestjs/common';
 import { CarsModule } from '@cars/cars.module';
-import { BrandsModule } from './brands/brands.module';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [CarsModule, BrandsModule],
+  imports: [CarsModule, ConfigModule.forRoot({
+    envFilePath : ['.env'],
+    isGlobal : true
+  })],
   controllers: [],
   providers: [],
   exports: [],
