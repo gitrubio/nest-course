@@ -19,7 +19,7 @@
     "noFallthroughCasesInSwitch": false,
     "paths": {
       "@cars/*" : ["src/cars/*"],
-      "@cars/dto" : ["src/cars/dto"]
+      "@brands/*" : ["src/brands/*"]
     }
   }
 }
